@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secure Link App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="auth-container">
+  <h2>Login or Register</h2>
+  <input type="text" id="username" placeholder="Username"><br>
+  <input type="password" id="password" placeholder="Password"><br>
+  <button onclick="login()">Login</button>
+  <button onclick="register()">Register</button>
+  <button onclick="touchLogin()">Login with Touch ID</button>
+</div>
+
+<div id="links-container" style="display:none;">
+  <h2>Your Links</h2>
+  <input type="text" id="newLink" placeholder="Add a new link">
+  <button onclick="addLink()">Add Link</button>
+  <ul id="linkList"></ul>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
